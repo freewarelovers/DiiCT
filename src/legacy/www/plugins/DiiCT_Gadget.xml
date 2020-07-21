@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="DiiCT.com Search"
+    title_url="http://diict.com/"
+    description="The multilingual dictionary DiiCT.com translates a word into many different languages gives you the translations in a new page"
+    height="200"
+    author="Karen Tamrazyan"
+    author_email="karen.tamrazyan@gmail.com" />
+  <Content type="html">
+    <![CDATA[
+      <div style="font-size:smaller">
+      <form action="http://diict.com/" method="post" style="margin-top:5px;margin-bottom:0" target="_blank">
+      <span style="white-space:nowrap">Term: <input name="q" size="22" value=""></span>
+      <input type="submit" value="Look up">
+      </form></div>
+    ]]>
+  </Content>
+</Module>
+
