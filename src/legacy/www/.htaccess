@@ -1,0 +1,15 @@
+RewriteEngine on
+
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://diict.com/$1 [R=301,L]
+
+# disabled on 2020.01.12
+# Rewrite URLs of the form 'x' to the form 'index.php?q=x'.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php [L,QSA]
+
+#RewriteCond %{HTTP_HOST} ^diict\.com [NC]
+#RewriteCond %{SERVER_PORT} 80
+#RewriteRule ^(.*)$ https://diict.com/$1 [R=301]
+RewriteCond %{HTTP_HOST} ^www\.diict\.com [NC]
+RewriteRule ^(.*)$ https://diict.com/$1 [R=301,L]

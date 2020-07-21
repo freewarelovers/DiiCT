@@ -1,0 +1,10 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+<ShortName>DiiCT</ShortName>
+<Description>Multilingual Dictionary DiiCT.com</Description>
+<Url type="text/html" method="POST" template="http://www.diict.com/">
+  <Param name="word" value="{searchTerms}" />
+  <Param name="from" value="detect" />
+  <Param name="to" value="all" />
+</Url>
+<SearchForm>http://www.diict.com/</SearchForm>
+</OpenSearchDescription>
